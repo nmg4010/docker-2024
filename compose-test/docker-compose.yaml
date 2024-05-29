@@ -1,0 +1,7 @@
+ services:
+   web:
+     image: nginx
+    ports:
+      - "81:80"
+    redis: 
+      image: "redis:alpine"  

@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+LABEL name=devops18
+RUN apt-get update && apt-get install -y nginx
+COPY home.html /usr/share/nginx/html/
+CMD ["nginx", "-g", "daemon off;"]
+
